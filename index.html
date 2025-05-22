@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caixa</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="header"><h1>Calculadora Caixa <br> Trilhão do Padre</h1>
+    <img src="assets/images/logoTrilhaoPadre.png" alt="logo">
+    </div>
+    
+
+    <section class="buttons">
+      <button onclick="adicionarItem('Água', 4)">Água - R$4</button>
+      <button onclick="adicionarItem('Picolé', 4)">Picolé - R$4</button>
+      <button onclick="adicionarItem('Pastel', 8)">Pastel - R$8</button>
+      <button onclick="adicionarItem('Espetinho', 8)">Espetinho - R$8</button>
+      <button onclick="adicionarItem('Refrigerante', 8)">Refrigerante - R$8</button>
+      <button onclick="adicionarItem('Açai', 10)">Açai - R$10</button>
+      <button onclick="adicionarItem('Energético', 12)">Energético - R$12</button>
+      <button onclick="adicionarItem('Abençoadinho', 16)">Abençoadinho - R$16</button>
+      <button onclick="adicionarItem('Almoço', 25)">Almoço - R$25</button>
+    </section>
+
+    <section id="lista" class="lista"></section>
+
+    <h2>Total: R$<span id="total">0</span></h2>
+    <button class="limpar" onclick="limpar()">Limpar Pedido</button>
+  </main>
+
+  <script src="assets/scripts/script.js"></script>
+</body>
+</html>
